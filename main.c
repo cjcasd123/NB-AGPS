@@ -4,7 +4,7 @@
 //#include "stm8l15x_clk.h"
 #include "stm8l15x_gpio.h"
 /*
-     建立定时器2和串口通行
+    建立模拟串口测试的初级版本
 */
 
 void delay_ms(unsigned int ms)
@@ -57,10 +57,8 @@ int main( void )
 	{
 		GPIO_ToggleBits(LED_GPIO_PORT, LED_GPIO_PINS);
 		softuart_printf("shu ju shi; %d\r\n", date);
-		
-              //  UART3_ruan_DataBuf_Push('a');
 		delay_ms(500);
-              softuart_string("shu ju shi\r\n");
-                delay_ms(500);
+        softuart_string("shu ju shi\r\n");
+        delay_ms(500);
 	}
 }
