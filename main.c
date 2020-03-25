@@ -5,6 +5,7 @@
 #include "stm8l15x_gpio.h"
 /*
     建立模拟串口测试的初级版本
+	第二个分支建立！！！！
 */
 
 void delay_ms(unsigned int ms)
